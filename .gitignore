@@ -1,0 +1,69 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Hardhat
+cache/
+artifacts/
+typechain/
+coverage/
+coverage.json
+
+# IPFS data
+ipfs_data/
+.ipfs/
+
+# Logs
+logs/
+*.log
+*.log.*
+debug.log
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build output
+dist/
+build/
+out/
+frontend/dist/
+frontend/build/
+
+# React/Vite specific
+frontend/node_modules/
+frontend/.vite/
+frontend/.terra/
+frontend/.ng/
+frontend/.cache/
+
+# Next.js support (if any)
+.next/
+out/
+.vercel/
+
+# Backend output
+backend/node_modules/
+backend/dist/
+backend/build/
+backend/tmp/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# npm lock files (optional, depending on your policy)
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
