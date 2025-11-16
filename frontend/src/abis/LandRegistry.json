@@ -150,7 +150,6 @@
       "name": "approve",
       "constant": false,
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "address",
@@ -169,7 +168,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "address",
@@ -188,7 +186,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "uint256",
@@ -207,7 +204,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "address",
@@ -230,7 +226,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "bytes32",
@@ -248,7 +243,6 @@
       "name": "mintLand",
       "constant": false,
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "string",
@@ -271,7 +265,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [],
       "outputs": [
         {
@@ -285,7 +278,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [],
       "outputs": [
         {
@@ -299,7 +291,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [],
       "outputs": [
         {
@@ -313,7 +304,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "uint256",
@@ -331,7 +321,6 @@
       "name": "renounceOwnership",
       "constant": false,
       "payable": false,
-      "gas": 29000000,
       "inputs": [],
       "outputs": []
     },
@@ -340,7 +329,6 @@
       "name": "safeTransferFrom",
       "constant": false,
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "address",
@@ -362,7 +350,6 @@
       "name": "safeTransferFrom",
       "constant": false,
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "address",
@@ -388,7 +375,6 @@
       "name": "setApprovalForAll",
       "constant": false,
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "address",
@@ -407,7 +393,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "bytes4",
@@ -426,7 +411,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "bytes32"
@@ -444,7 +428,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [],
       "outputs": [
         {
@@ -458,7 +441,6 @@
       "constant": true,
       "stateMutability": "view",
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "uint256",
@@ -476,7 +458,6 @@
       "name": "transferFrom",
       "constant": false,
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "address",
@@ -498,7 +479,6 @@
       "name": "transferOwnership",
       "constant": false,
       "payable": false,
-      "gas": 29000000,
       "inputs": [
         {
           "type": "address",

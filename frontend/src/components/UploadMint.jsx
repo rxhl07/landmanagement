@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { addFile, addJSON } from "../utils/ipfs";
 import { ethers } from "ethers";
 import contractDeployment from "../abis/LandRegistry.json";
+import { Buffer } from 'buffer';
 
 function normSurvey(s) { return String(s).trim().toLowerCase(); }
 
@@ -52,8 +53,29 @@ export default function UploadMint() {
 
       setStatus("Sending mint transaction (confirm MetaMask)...");
       const tx = await contract.mintLand(`ipfs://${metaCidLocal}`, surveyHash);
-      await tx.wait();
-      setStatus(`Minted! metadata: ipfs://${metaCidLocal}`);
+      
+      // --- MODIFICATION START ---
+      // Wait for the transaction to be mined and get the receipt
+      const receipt = await tx.wait();
+      
+      // Find the 'Transfer' event in the transaction receipt
+      const event = receipt.events.find(event => event.event === 'Transfer');
+      
+      // Get the Token ID from the event arguments
+      // Note: The 'Transfer' event for ERC721 is: event Transfer(address from, address to, uint256 tokenId)
+      // So, tokenId is the 3rd argument (index 2), or we can access it by name.
+      const tokenId = event.args.tokenId.toString(); 
+
+      // Log the information to the browser's console (F12)
+      console.log("NFT MINTED!");
+      console.log("Contract Address:", contract.address);
+      console.log("Token ID:", tokenId);
+      console.log("Transaction Hash:", receipt.transactionHash);
+
+      // Update the status message to include the new Token ID
+      setStatus(`Minted! Token ID: ${tokenId} | metadata: ipfs://${metaCidLocal}`);
+      // --- MODIFICATION END ---
+
     } catch (e) {
       console.error(e);
       setStatus("Error: " + (e.message || e));
